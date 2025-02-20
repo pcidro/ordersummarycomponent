@@ -1,0 +1,121 @@
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 1rem;
+}
+
+body {
+  font-family: "Red Hat Display", serif;
+  background-color: var(--Paleblue);
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 0.625rem;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.plan-type {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.card-container {
+  background: var(--Verypaleblue);
+  width: 28.125rem;
+  border-radius: 1rem;
+  box-shadow: 0 1.25rem 1.875rem -0.5rem rgba(167, 168, 207, 0.43);
+  overflow: hidden;
+}
+
+.card-body h3 {
+  color: var(--Darkblue);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.card-body {
+  color: var(--desaturated-blue);
+  font-size: 1.125rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card-body p {
+  line-height: 1.5rem;
+  color: var(--Desaturatedblue);
+  font-size: 1rem;
+}
+
+.plan {
+  background: #f7f9ff;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.plan .plan-description {
+  line-height: 1.75rem;
+  margin-right: 6rem;
+}
+
+.link-change {
+  color: var(--Brightblue);
+  font-weight: bold;
+}
+
+.proceed-btn {
+  display: block;
+  text-decoration: none;
+  background-color: var(--Brightblue);
+  padding: 1rem 0;
+  color: var(--Paleblue);
+  border-radius: 0.625rem;
+  box-shadow: 0 1.25rem 1.875rem -0.5rem rgb(197 198 245);
+  font-weight: 900;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.cancel-btn {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: var(--Desaturatedblue);
+  border-radius: 0.625rem;
+  box-shadow: 0 1.25rem 1.875rem -0.5rem rgb(197 198 245);
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.link-change:hover {
+  text-decoration: none;
+}
+
+.proceed-btn:hover,
+.link-change:hover {
+  opacity: 0.8;
+}
